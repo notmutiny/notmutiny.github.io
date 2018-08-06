@@ -1,0 +1,24 @@
+body {
+    background: #161616;    
+}
+
+.link, #searchbar, #submit-button, #footer, #footer > button {
+    background: #101010;
+    border: none;
+    color: white;
+}
+
+.link:hover, #submit-button:hover, #footer > button:hover {
+    background: #0B0B0B;
+    color: white;
+    cursor: pointer;
+}
+
+.link {
+    border-bottom: solid #C3C3C3;
+}
+
+::placeholder { 
+    color: white;
+    opacity: 0.5;
+}

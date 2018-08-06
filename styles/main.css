@@ -1,0 +1,121 @@
+/* Header */
+/* ---------------------------------- */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#grid {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    /* stretches body + footer 100% */
+    height: 100%;
+}
+
+#content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.link, #searchbar, #submit-button, #footer, #footer > button {
+    font-family: sans-serif, 'Comic Sans MS'; /* lol */
+}
+
+
+/* Logo */
+/* ---------------------------------- */
+
+#logo-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* consistent logo/wrapper size */
+#logo-wrapper, #logo, #logo-eyes {
+    height: 200px;
+    margin: 20px 0;
+}
+
+#logo, #logo-eyes {
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+#logo { z-index: 0; }
+#logo-eyes { z-index: 1; }
+
+
+/* Search */
+/* ---------------------------------- */
+
+#search-wrapper, #link-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+#searchbar, #submit-button {
+    display: inline-block;
+    font-size: 1.25em;
+    padding: 10px 15px;
+}
+
+#searchbar {
+    margin-right: -4px;
+    max-width: 500px;
+    width: 65%;
+}
+
+
+/* Links */
+/* ---------------------------------- */
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 1.5em;
+}
+
+.link {
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+#chan:hover { border-bottom: solid #789922; }
+#reddit:hover { border-bottom: solid #0077D6; }
+#youtube:hover { border-bottom: solid #ff0000; }
+#nyaa:hover { border-bottom: solid #9400D3; }
+
+
+/* Footer */
+/* ---------------------------------- */
+
+#footer, #footer > button {
+    border: none;
+    height: 45px;
+}
+
+#footer {
+    grid-row: 2;
+    width: 100%;
+}
+
+#footer > button {
+    background: none;
+    cursor: pointer;
+    float: right;
+    padding: 0 15px;
+}
