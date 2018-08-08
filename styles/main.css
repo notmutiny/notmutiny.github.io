@@ -94,10 +94,10 @@ ul li {
     text-decoration: none;
 }
 
-#chan:hover { border-bottom: solid #789922; }
+#github:hover { border-bottom: solid #6CC644; }
 #reddit:hover { border-bottom: solid #0077D6; }
 #youtube:hover { border-bottom: solid #ff0000; }
-#nyaa:hover { border-bottom: solid #9400D3; }
+#discord:hover { border-bottom: solid #7289DA; }
 
 
 /* Footer */
