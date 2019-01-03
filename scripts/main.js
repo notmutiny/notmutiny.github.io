@@ -9,17 +9,7 @@ $(document).ready(function() {
     }
 });
 
-function toggleSlider() {
-    var test = document.getElementById("slider").style.display;
 
-    if (test == "none") {
-        document.getElementById("slider").style.display = "block";
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $("#slider").offset().top
-        }, 500);
-    } else
-        document.getElementById("slider").style.display = "none";
-}
 // -- convenience functions -- //
 
 function getRandomInt(min, max) {
